@@ -1,2 +1,10 @@
 # linked-list-DSA-JAVA
-Implementation of Linked lists to understand creating , display and make Reverse , Palindrome programs
+This project contains a basic implementation of a Linked list in JAVA.
+##Features
+--Create Linked list
+--Insert elements
+--Display elements
+##Language used
+Java
+##Author 
+Sahithi
