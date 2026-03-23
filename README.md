@@ -1,10 +1,52 @@
-# linked-list-DSA-JAVA
-This project contains a basic implementation of a Linked list in JAVA.
-##Features
---Create Linked list
---Insert elements
---Display elements
-##Language used
-Java
-##Author 
+# Linked List in Java
+
+## Overview
+This project implements a **Singly Linked List** in Java with basic and advanced operations. It is a beginner-friendly Data Structures project demonstrating how linked lists work internally.
+
+## Features
+* Create a linked list
+* Append elements to the list
+* Display elements
+* Reverse the linked list
+* Check whether the linked list is a palindrome
+
+## Technologies Used
+* Java
+* Data Structures (Linked List)
+* Stack (for palindrome check)
+
+##  Input Format
+* First line: Number of elements (n)
+* Second line: n integers
+### Example Input
+```
+5
+1 2 3 2 1
+```
+##  Output
+```
+1 2 3 2 1
+Reversed: 1 2 3 2 1
+Palindrome: true
+```
+##  Concepts Used
+* Singly Linked List
+* Traversal
+* Reversal of Linked List
+* Stack Data Structure
+* Algorithmic Thinking
+
+## File Structure
+* `Main.java` → Contains complete implementation
+
+## Author
 Sahithi
+
+## Future Improvements
+
+* Add deletion operation
+* Add search functionality
+* Convert to doubly linked list
+* Add menu-driven program
+
+---
