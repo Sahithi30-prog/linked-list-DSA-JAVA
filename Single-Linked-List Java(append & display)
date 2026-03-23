@@ -16,7 +16,7 @@ class node
 class LinkedList
 {
     node head;
-    LList()
+    LinkedList()
     {
         head=null;
     }
@@ -52,6 +52,46 @@ class LinkedList
             System.out.print(temp.data+" ");
             temp=temp.next;
         }
+		System.out.println();
+    }
+//logic to reverse
+void reverse()
+    {
+		node prev = null;
+		node curr = head;
+		while(curr != null) {
+		    node next = curr.next;
+		    curr.next = prev;
+		    prev = curr;
+		    curr = next;
+    }
+head = prev;
+}
+//logic to palindrome
+void palindrome()
+    {
+        Stack<Integer> s= new Stack<>();
+        node temp=head;
+		boolean isPalindrome = true;
+        while(temp!=null)
+        {
+          s.push(temp.data);
+          temp=temp.next;
+        }  
+        temp=head;
+        while(temp!=null)
+        {
+          if(temp.data!=s.pop())
+          {
+				isPalindrome = false;
+   				break;
+          }
+          temp=temp.next;
+        }
+         if(isPalindrome)
+            System.out.println("Palindrome: true");
+        else
+            System.out.println("Palindrome: false");   
     }
 }
 //Main class 
@@ -60,7 +100,7 @@ class Main
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        LList l=new LList();
+        LinkedList l=new LinkedList();
         int n=sc.nextInt();
         for(int i=0;i<n;i++)
         {
@@ -68,6 +108,13 @@ class Main
             l.append(x);
     
         }
+		//To display whole Linked List
         l.display();
+		//TO get the reverse 
+		l.reverse();
+		System.out.print("Reversed: ");
+		l.display();
+		//To whether Palindrome or not
+		l.palindrome();
     }
 }
