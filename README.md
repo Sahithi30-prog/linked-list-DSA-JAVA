@@ -9,6 +9,7 @@ This project implements a **Singly Linked List** in Java with basic and advanced
 * Display elements
 * Reverse the linked list
 * Check whether the linked list is a palindrome
+* deletion operation with the position
 
 ## Technologies Used
 * Java
@@ -28,6 +29,9 @@ This project implements a **Singly Linked List** in Java with basic and advanced
 1 2 3 2 1
 Reversed: 1 2 3 2 1
 Palindrome: true
+Give a position to delete: 2
+After deletion:
+1 2 2 1
 ```
 ##  Concepts Used
 * Singly Linked List
@@ -43,8 +47,7 @@ Palindrome: true
 Sahithi
 
 ## Future Improvements
-
-* Add deletion operation
+* Add 
 * Add search functionality
 * Convert to doubly linked list
 * Add menu-driven program
